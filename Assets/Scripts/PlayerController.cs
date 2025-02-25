@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 5f; // Fuerza del salto
-    private bool isGrounded; // Verifica si el jugador está en el suelo
+    private bool isGrounded; // Verifica si el jugador estï¿½ en el suelo
     private Rigidbody2D rb;
     private bool moving;
     private Animator animator;
@@ -27,23 +27,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("left"))
+        if (Input.GetKey(KeyCode.A))
         {
             gameObject.transform.Translate(-3f * Time.deltaTime, 0, 0);
             animator.SetBool("moving", true);
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
-        if (Input.GetKey("right"))
+        if (Input.GetKey(KeyCode.D))
         {
             gameObject.transform.Translate(3f * Time.deltaTime, 0, 0);
             animator.SetBool("moving", true);
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        if (!Input.GetKey("left") && !Input.GetKey("right"))
+        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
-            moving = false; // Aquí se corrige el error
+            moving = false; // Aquï¿½ se corrige el error
             animator.SetBool("moving", false);
         }
 
@@ -61,9 +61,10 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow) && isGrounded && rb != null)
+        if (Input.GetKeyDown(KeyCode.S) && isGrounded && rb != null)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
+    
 }
