@@ -52,7 +52,7 @@ public class PlayerController2 : MonoBehaviour
 
     void ManageJump()
     {
-        if (Input.GetKeyDown(KeyCode.S) && isGrounded && rb != null)
+        if (Input.GetKeyDown(KeyCode.DownArrow) && isGrounded && rb != null)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isGrounded = false; // Desactivar el estado de estar en el suelo al saltar
