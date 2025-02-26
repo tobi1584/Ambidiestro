@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 5f; // Fuerza del salto
-    private bool isGrounded; // Verifica si el jugador est� en el suelo
+    private bool isGrounded; // Verifica si el jugador está en el suelo
     private Rigidbody2D rb;
     private bool moving;
     private Animator animator;
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
         if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
-            moving = false; // Aqu� se corrige el error
+            moving = false; // Aquí se corrige el error
             animator.SetBool("moving", false);
         }
 
@@ -52,19 +52,19 @@ public class PlayerController : MonoBehaviour
 
     void ManageJump()
     {
-        if (gameObject.transform.position.y <= 0.5f)
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-
         if (Input.GetKeyDown(KeyCode.S) && isGrounded && rb != null)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isGrounded = false; // Desactivar el estado de estar en el suelo al saltar
         }
     }
-    
+
+    // Detectar colisión con el suelo
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
 }

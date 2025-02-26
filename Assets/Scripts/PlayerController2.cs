@@ -52,19 +52,20 @@ public class PlayerController2 : MonoBehaviour
 
     void ManageJump()
     {
-        if (gameObject.transform.position.y <= 0.5f)
+        if (Input.GetKeyDown(KeyCode.S) && isGrounded && rb != null)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isGrounded = false; // Desactivar el estado de estar en el suelo al saltar
+        }
+    }
+
+    // Detectar colisión con el suelo
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
         }
-        else
-        {
-            isGrounded = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) && isGrounded && rb != null)
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
     }
-    
+
 }
