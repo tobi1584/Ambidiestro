@@ -1,11 +1,12 @@
 using UnityEngine;
 
 public class Coins : MonoBehaviour
+
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private AudioSource audioSource;
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -19,6 +20,7 @@ public class Coins : MonoBehaviour
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Player2")
         {
             Destroy(this.gameObject);
+        
         }
     }
 }

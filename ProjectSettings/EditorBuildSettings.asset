@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/Escena2.unity
     guid: 7ef2d7c47ac77de43b5b664aec50320a
   - enabled: 1
-    path: Assets/Escena3.unity
+    path: Assets/Escena4.unity
     guid: fd238e7d564950046b74313c56a27073
   - enabled: 1
-    path: Assets/Escena4.unity
+    path: Assets/Escena3.unity
     guid: 42470f3c86c1d7e4c915fa7a3762d68d
   - enabled: 1
     path: Assets/PantallaFin.unity
