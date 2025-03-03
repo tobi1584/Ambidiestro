@@ -9,7 +9,7 @@ public class EndLvl : MonoBehaviour
         if (collision.gameObject.CompareTag("Player2"))
         {
 
-            if (Score.score >= 1)
+            if (Score.score >= 10)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
