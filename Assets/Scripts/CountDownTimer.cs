@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement; // Necesario para reiniciar el nivel
 public class CountdownTimer : MonoBehaviour
 {
     public TextMeshProUGUI countdownText; // Referencia al texto en la UI
-    public int startTime = 10; // Tiempo inicial en segundos
+    public int startTime = 15; // Tiempo inicial en segundos
     private int currentTime;
 
     private void Start()

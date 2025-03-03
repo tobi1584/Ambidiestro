@@ -11,7 +11,7 @@ public class EndLvl : MonoBehaviour
 
             if (Score.score >= 10)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
             else
             {
