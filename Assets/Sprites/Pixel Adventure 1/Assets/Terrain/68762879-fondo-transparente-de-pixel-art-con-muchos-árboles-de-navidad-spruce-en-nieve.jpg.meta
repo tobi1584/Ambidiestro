@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: be5e4f78d599d0246be886f37268a67f
+guid: 9e02f2db9a8bdd14193c29b9410cf778
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1539264654127973187
-    second: felicidades_0
+      213: 3232885174992598676
+    second: "68762879-fondo-transparente-de-pixel-art-con-muchos-\xE1rboles-de-navidad-spruce-en-nieve_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: felicidades_0
+      name: "68762879-fondo-transparente-de-pixel-art-con-muchos-\xE1rboles-de-navidad-spruce-en-nieve_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 640
-        height: 480
+        width: 450
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 343cc9c2c019c5510800000000000000
-      internalID: 1539264654127973187
+      spriteID: 4967f0720f38ddc20800000000000000
+      internalID: 3232885174992598676
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      felicidades_0: 1539264654127973187
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
