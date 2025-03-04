@@ -6,7 +6,7 @@ public class Bettle1 : MonoBehaviour
     public float velocidad = 2f;
     public float distancia = 1f;
     private Vector3 posicionInicial;
-    private int direccion = 1;
+    private int direccion = -1;
 
     void Start()
     {
@@ -22,9 +22,12 @@ public class Bettle1 : MonoBehaviour
         if (Mathf.Abs(transform.position.x - posicionInicial.x) >= distancia)
         {
             direccion *= -1;
+            SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            spriteRenderer.flipX = !spriteRenderer.flipX; 
         }
     }
-    
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
         // Si la bola de fuego toca al jugador
