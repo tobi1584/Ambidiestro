@@ -18844,7 +18844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 2038589561}
-  startTime: 20
+  startTime: 60
 --- !u!1 &2051144742
 GameObject:
   m_ObjectHideFlags: 0
