@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Escena4.unity
     guid: fd238e7d564950046b74313c56a27073
   - enabled: 1
+    path: Assets/Escena5.unity
+    guid: cbd6c775516c34f40a070ef288cf5d7e
+  - enabled: 1
     path: Assets/PantallaFin.unity
     guid: 9e629b7843acf42499130d0d25cafb1f
   m_configObjects:
