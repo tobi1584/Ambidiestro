@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67f66c9ac46f8ae458e2dc77239cf494
+guid: c55fc4110e615864a862aac72de3d9f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3454055110897987348
-    second: png-clipart-fireball-fireball-cinnamon-whisky-art-icon-fireball-image-file-formats-orange-thumbnail_0
+      213: -6042773298833535855
+    second: depositphotos_548304440-stock-illustration-ocean-underwater-landscape-sunken-sailing_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: png-clipart-fireball-fireball-cinnamon-whisky-art-icon-fireball-image-file-formats-orange-thumbnail_0
+      name: depositphotos_548304440-stock-illustration-ocean-underwater-landscape-sunken-sailing_0
       rect:
         serializedVersion: 2
-        x: 184
-        y: 369
-        width: 890
-        height: 261
+        x: 0
+        y: 0
+        width: 600
+        height: 332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce09d405d2bb010d0800000000000000
-      internalID: -3454055110897987348
+      spriteID: 19ccfc063b1c32ca0800000000000000
+      internalID: -6042773298833535855
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      png-clipart-fireball-fireball-cinnamon-whisky-art-icon-fireball-image-file-formats-orange-thumbnail_0: -3454055110897987348
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
